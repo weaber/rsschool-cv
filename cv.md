@@ -5,7 +5,7 @@
 * github: https://github.com/weaber
 
 ## About myself
-Hello, I'm going to learn how to develop different web application. At this moment I have no any experience ar real projects, but in 2020-2021 I have finished
+Hello, I'm going to learn how to develop different web applications. At this moment I have no any experience at real projects, but in 2020-2021 I have finished
 Javascript Courses in HTML Academy.
 
 ## Skills
