@@ -3,6 +3,7 @@
 ## Contacts
 * __phone:__ +7 (123) 456-78-90
 * __github:__ [weaber](https://github.com/weaber)
+* __discord:__ daze (@weaber)
 
 ## __About myself__
 Hello, I'm going to learn how to develop different web applications. At this moment I have no any experience at real projects, but in 2020-2021 I have finished
