@@ -12,6 +12,122 @@
     <title>CV</title>
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#profile">Profile</a>
+        </li>
+        <li>
+          <a href="#contacts">Contacts</a>
+        </li>
+        <li>
+          <a href="#about">About myself</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#code">Code</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#languages">Languages</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section id="profile" class="section">
+      <h1 class="section-title">Profile</h1>
+      <img src="img/photo.jpg" width="300" height="auto" alt="photo">
+      <p class="name">Dmitriy Shirchenko</p>
+    </section>
+
+    <section id="contacts" class="section">
+      <h2 class="section-title">Contacts</h2>
+      <phone>+7 (123) 456-78-90</phone>
+      <a href="https://github.com/weaber">Github</a>
+      <p>discord: daze (@weaber)</p>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section-title">About myself</h2>
+      <p>Hello, I'm going to learn how to develop different web applications. At this moment I have no any experience at real projects, but in 2020-2021 I have finished
+        Javascript Courses in HTML Academy.</p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>Git</li>
+        <li>Visual Studio Code</li>
+      </ul>
+    </section>
+
+    <section id="code" class="section">
+      <h2 class="section-title">Code</h2>
+      <pre>
+        <code>
+          const sendForm = (data, onSuccess, onError) => {
+              fetch(
+                SEND_URL,
+                {
+                  method: 'POST',
+                  body: data,
+                },
+              )
+                .then((response) => {
+                  if (response.status === SUCCESS_CODE) {
+                    onSuccess()
+                  } else {
+                    onError();
+                  }
+                })
+                .catch((error) => onError(error))
+            };
+        </code>
+      </pre>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+      <ul>
+        <li><a href="https://github.com/weaber/nerds">Nerds project (HTML, CSS)</a></li>
+        <li><a href="https://github.com/weaber/571125-kekstagram-21">Kekstagram project (JS)</a></li>
+        <li><a href="https://github.com/weaber/571125-cinemaddict-13">Cinemaddict project (JS)</a></li>
+      </ul>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <img src="img/certificate_js1.jpg" width="300" height="auto" alt="js1 certificate">
+      <img src="img/certificate_js2.jpg" width="300" height="auto" alt="js2 certificate">
+    </section>
+
+    <section id="languages" class="section">
+      <h2 class="section-title">Languages</h2>
+      <p>English, Intermediate</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://github.com/weaber">
+      <img src="img/github-mark.svg" width="50" height="auto" alt="Github">
+    </a>
+    <p>2023</p>
+    <a href="https://rs.school/js/">
+      <img src="img/rs_school_js.svg" width="150" height="auto" alt="RSSchool logo">
+    </a>
+  </footer>
 </body>
 </html>
