@@ -1,0 +1,24 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weaber/rsschool-cv.git"
+  },
+  "author": "weaber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weaber/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/weaber/rsschool-cv#readme",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.4",
+    "linthtml-config-htmlacademy": "^1.0.3",
+    "stylelint-config-htmlacademy": "^1.1.4"
+  }
+}
