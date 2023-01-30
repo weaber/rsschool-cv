@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>CV</title>
+</head>
+<body>
+  <header class="container">
+    <nav class="main-navigation">
+      <ul class="cv-menu">
+        <li >
+          <a href="#profile">Profile</a>
+        </li>
+        <li>
+          <a href="#contacts">Contacts</a>
+        </li>
+        <li>
+          <a href="#about">About myself</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#code">Code</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#languages">Languages</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container main">
+    <h1 class="visually-hidden">My CV</h1>
+    <section id="profile" class="profile">
+      <h2 class="section-title visually-hidden">Profile</h2>
+      <img src="img/photo.jpg" width="300" height="340" alt="photo">
+      <div>
+        <p class="name">Dmitriy Shirchenko</p>
+        <p class="position">Junior front-end developer</p>
+      </div>
+    </section>
+
+    <div class="left-column">
+      <section id="contacts" class="contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul class="contacts-list">
+          <li>phone: +7 (123) 456-78-90</li>
+          <li><a href="https://github.com/weaber">Github</a></li>
+          <li>discord: daze (@weaber)</li>
+        </ul>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Git</li>
+          <li>Visual Studio Code</li>
+        </ul>
+      </section>
+
+      <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+        <ul class="experience-list">
+          <li><a href="https://github.com/weaber/nerds">Nerds project (HTML, CSS)</a></li>
+          <li><a href="https://github.com/weaber/571125-kekstagram-21">Kekstagram project (JS)</a></li>
+          <li><a href="https://github.com/weaber/571125-cinemaddict-13">Cinemaddict project (JS)</a></li>
+        </ul>
+      </section>
+
+      <section id="languages" class="languages">
+        <h2 class="section-title">Languages</h2>
+        <p>English, Intermediate</p>
+      </section>
+    </div>
+
+    <div class="right-column">
+      <section id="about" class="about">
+        <h2 class="section-title">About myself</h2>
+        <p>Hello, I'm going to learn how to develop different web applications. At this moment I have no any experience at real projects, but in 2020-2021 I have finished
+          Javascript Courses in HTML Academy.</p>
+      </section>
+
+      <section id="code" class="code">
+        <h2 class="section-title">Code</h2>
+        <pre>
+<code>
+  const sendForm = (data, onSuccess, onError) => {
+      fetch(
+        SEND_URL,
+        {
+          method: 'POST',
+          body: data,
+        },
+      )
+        .then((response) => {
+          if (response.status === SUCCESS_CODE) {
+            onSuccess()
+          } else {
+            onError();
+          }
+        })
+        .catch((error) => onError(error))
+    };
+</code>
+        </pre>
+      </section>
+
+      <section id="education" class="education">
+        <h2 class="section-title">Education</h2>
+        <img src="img/certificate_js1.jpg" width="300" height="420" alt="js1 certificate">
+        <img src="img/certificate_js2.jpg" width="300" height="420" alt="js2 certificate">
+      </section>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    <a href="https://github.com/weaber">
+      <img src="img/GitHub_Logo.png" width="100" height="40" alt="Github_link">
+    </a>
+    <p>2023</p>
+    <a href="https://rs.school/js/">
+      <img src="img/rs_school_js.svg" width="150" height="55" alt="RSSchool_logo">
+    </a>
+  </footer>
+</body>
+</html>
