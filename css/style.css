@@ -1,5 +1,150 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-grey: #d3d3d3;
+}
+
+/* Global */
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: var(--basic-grey);
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/* Header */
+
+.main-navigation {
+  width: 100%;
+  background-color: var(--basic-grey);
+}
+
+.cv-menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 10px 0;
+  list-style: none;
+}
+
+.cv-menu a {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+/* Main */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--basic-grey);
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile img {
+  width: 300px;
+}
+
+.profile div {
+  width: 800px;
+  padding-top: 50px;
+}
+
+.profile .name {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.profile .position {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.left-column {
+  width: 300px;
+}
+
+.contacts-list li {
+  margin-bottom: 5px;
+}
+
+.contacts a {
+  text-decoration: underline;
+  color: var(--basic-black);
+}
+
+.skills-list li {
+  margin-bottom: 5px;
+}
+
+.experience-list li {
+  margin-bottom: 5px;
+}
+
+.experience a {
+  text-decoration: underline;
+  color: var(--basic-black);
+}
+
+.right-column {
+  width: 800px;
+}
+
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.education h2 {
+  width: 100%;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: var(--basic-grey-dark);
+}
+
+.footer p {
+  font-size: 24px;
 }
